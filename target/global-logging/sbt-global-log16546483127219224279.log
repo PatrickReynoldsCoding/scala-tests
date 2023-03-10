@@ -1,0 +1,20 @@
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(sbtMapExec 7 __0f2152eb-de9a-4b8b-aaee-86fe357912f0, None, None)
+[debug] > Exec(bspScalaMainClasses file:/Users/patrickreynolds/scala/#scala-build file:/Users/patrickreynolds/scala/#scala/Test file:/Users/patrickreynolds/scala/#scala/Compile, Some(__0f2152eb-de9a-4b8b-aaee-86fe357912f0), Some(CommandSource(network-1)))
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing buildTarget/scalaMainClasses"})
+[debug] Evaluating tasks: bspScalaMainClasses
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] buildTarget/scalaMainClasses is a no-op for build.sbt targets: [BuildTargetIdentifier(file:/Users/patrickreynolds/scala/#scala-build)]
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"6","parents":[]},"eventTime":1678372777543,"message":"Compiling scala","dataKind":"compile-task","data":{"target":{"uri":"file:/Users/patrickreynolds/scala/#scala/Compile"}}})
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"6","parents":[]},"eventTime":1678372777565,"message":"Compiled scala","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/Users/patrickreynolds/scala/#scala/Compile"},"errors":0,"warnings":0,"time":22}})
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"7","parents":[]},"eventTime":1678372777595,"message":"Compiling scala-test","dataKind":"compile-task","data":{"target":{"uri":"file:/Users/patrickreynolds/scala/#scala/Test"}}})
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"7","parents":[]},"eventTime":1678372777604,"message":"Compiled scala-test","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/Users/patrickreynolds/scala/#scala/Test"},"errors":0,"warnings":0,"time":9}})
+[success] Total time: 0 s, completed 9 Mar 2023, 14:39:37
+[debug] > Exec(sbtCompleteExec 7, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(sbtReportResult 7, Some(7), Some(CommandSource(network-1)))
+[debug] unmatched Processing event for requestId Some(7): None
+[debug] unmatched json response for requestId Some(7): {"status":"Done","channelName":"network-1","execId":"7","commandQueue":["shell"],"exitCode":0}
+[debug] > Exec(shell, None, None)
+[debug] Forcing garbage collection...
